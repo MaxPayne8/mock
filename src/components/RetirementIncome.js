@@ -21,7 +21,7 @@ const RetirementIncome = () => {
   const percentage2 = 95;
   const percentage3 = 59;
 
-  const data = [
+  const dataDesktop = [
     {
       name: "20",
       Employer: 10,
@@ -29,40 +29,121 @@ const RetirementIncome = () => {
       TotalInterest: 30,
     },
     {
+      Employer: 15,
+      Employee: 25,
+      TotalInterest: 35,
+    },
+    {
       name: "25",
+      Employer: 20,
+      Employee: 30,
+      TotalInterest: 40,
+    },
+    {
+      Employer: 25,
+      Employee: 35,
+      TotalInterest: 45,
+    },
+    {
+      name: "30",
+      Employer: 30,
+      Employee: 40,
+      TotalInterest: 50,
+    },
+    {
+      Employer: 35,
+      Employee: 45,
+      TotalInterest: 55,
+    },
+    {
+      name: "35",
       Employer: 40,
       Employee: 50,
       TotalInterest: 60,
     },
     {
-      name: "30",
+      Employer: 45,
+      Employee: 55,
+      TotalInterest: 65,
+    },
+    {
+      name: "40",
+      Employer: 50,
+      Employee: 60,
+      TotalInterest: 70,
+    },
+    {
+      Employer: 55,
+      Employee: 65,
+      TotalInterest: 75,
+    },
+    {
+      name: "60",
+      Employer: 60,
+      Employee: 70,
+      TotalInterest: 80,
+    },
+    {
+      Employer: 65,
+      Employee: 75,
+      TotalInterest: 85,
+    },
+    {
+      name: "65",
       Employer: 70,
       Employee: 80,
       TotalInterest: 90,
     },
+  ];
+
+  const dataMob = [
+    {
+      name: "20",
+      Employer: 10,
+      Employee: 20,
+      TotalInterest: 30,
+    },
+
+    {
+      name: "25",
+      Employer: 20,
+      Employee: 30,
+      TotalInterest: 40,
+    },
+
+    {
+      name: "30",
+      Employer: 30,
+      Employee: 40,
+      TotalInterest: 50,
+    },
+
     {
       name: "35",
-      Employer: 100,
-      Employee: 110,
-      TotalInterest: 120,
+      Employer: 40,
+      Employee: 50,
+      TotalInterest: 60,
     },
+
     {
       name: "40",
-      Employer: 130,
-      Employee: 140,
-      TotalInterest: 150,
+      Employer: 50,
+      Employee: 60,
+      TotalInterest: 70,
     },
+
     {
       name: "60",
-      Employer: 160,
-      Employee: 170,
-      TotalInterest: 180,
+      Employer: 60,
+      Employee: 70,
+      TotalInterest: 80,
     },
+
     {
       name: "65",
-      Employer: 190,
-      Employee: 200,
-      TotalInterest: 210,
+      Employer: 70,
+      Employee: 80,
+      TotalInterest: 90,
     },
   ];
   return (
@@ -136,12 +217,28 @@ const RetirementIncome = () => {
           </div>
         </div>
       </div>
-      <div className="relative font-semibold w-[100%] flex justify-center">
+      <div className="relative sm:hidden font-semibold w-[100%] flex justify-center">
         <label className="absolute top-14 md:top-14 lg:top-4  z-10 right-0 ">
           {" "}
           ✅
         </label>
-        <BarChart width={600} height={300} data={data}>
+        <BarChart width={600} height={300} data={dataMob}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+
+          <Bar dataKey="Employer" stackId="a" fill="darkblue" />
+          <Bar dataKey="Employee" stackId="a" fill="blue" />
+          <Bar dataKey="TotalInterest" stackId="a" fill="lightblue" />
+        </BarChart>
+      </div>
+      <div className="hidden relative font-semibold w-[100%] sm:flex justify-center">
+        <label className="absolute top-14 md:top-16 lg:top-8  z-10 right-0 ">
+          {" "}
+          ✅
+        </label>
+        <BarChart width={600} height={300} data={dataDesktop}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
           <YAxis />
@@ -218,6 +315,7 @@ const RetirementIncome = () => {
         </div>
       </div>
       <HorizontalNav />
+      <hr className="h-1 bg-gray-400 sm:hidden"></hr>
     </div>
   );
 };

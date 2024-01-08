@@ -71,6 +71,7 @@ const Profile = () => {
         </div>
       </div>
       <HorizontalNav />
+      <hr className="h-1 bg-gray-400 sm:hidden"></hr>
     </div>
   );
 };
