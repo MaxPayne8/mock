@@ -21,7 +21,7 @@ const NavBar = () => {
           size={40}
         />
       </div>
-      <div>
+      <div className="mb-40">
         <IoMdHome
           className=" m-2 my-4 p-2 hover:rounded-lg hover:bg-blue-800 hover:cursor-pointer duration-200  ease-in-out "
           size={40}
