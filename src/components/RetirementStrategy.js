@@ -14,7 +14,7 @@ const RetirementStrategy = () => {
   const percentage3 = 59;
   return (
     <div className="relative w-full md:w-[28%] text-left flex flex-col justify-evenly sm:bg-slate-100 min-h-screen">
-      <RxCross1 size={20} className="absolute top-2 right-2 md:hidden" />
+      <RxCross1 size={20} className="absolute top-0 right-2 md:hidden" />
       <div className="sm:hidden block">
         <div className="mt-8 text-left ml-8">
           <h1 className="text-xl font-bold">How do I compare with my peers?</h1>

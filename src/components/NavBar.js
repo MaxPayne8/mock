@@ -12,7 +12,7 @@ const NavBar = () => {
     <div className=" flex-col justify-between min-h-screen hidden md:flex ">
       <div>
         <PiButterflyDuotone
-          className=" m-2 my-4 p-2 hover:rounded-lg     "
+          className=" m-2 my-4 p-2 hover:rounded-lg"
           size={40}
           color="blue"
         />
