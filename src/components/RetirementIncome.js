@@ -315,7 +315,7 @@ const RetirementIncome = () => {
         </div>
       </div>
       <HorizontalNav />
-      <hr className="h-1 bg-gray-400 sm:hidden"></hr>
+      <hr className="h-1 bg-gray-200 mt-4 sm:hidden"></hr>
     </div>
   );
 };
