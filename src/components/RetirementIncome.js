@@ -213,7 +213,7 @@ const RetirementIncome = () => {
             <h1 className="text-slate-500 font-semibold text-sm ml-1">
               Total Interest:
             </h1>
-            <label className="ml-1 font-bold text-sm ">K 73,500</label>
+            <label className="ml-1 font-bold text-sm ">K 244,313</label>
           </div>
         </div>
       </div>
